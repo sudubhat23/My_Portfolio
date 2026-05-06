@@ -33,7 +33,7 @@ export default function Navbar() {
               {l}
             </a>
           ))}
-          <a href="https://drive.google.com/file/d/your-resume-link"
+          <a href="https://drive.google.com/file/d/1xWpZZs5YlDjRTl_3nwR0_2k-MpYW2Tal/view?usp=drivesdk"
             target="_blank"
             className="bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
             Resume

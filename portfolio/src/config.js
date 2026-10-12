@@ -8,7 +8,7 @@ export const PORTFOLIO_CONFIG = {
   email: "sudubhatjune23@gmail.com",
   phone: "+91-9108133927",
   location: "Bengaluru, Karnataka, India",
-  
+
   // Replace this with your Web3Forms access key from web3forms.com
-  web3formsKey: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "YOUR_ACCESS_KEY_HERE",
+  web3formsKey: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "ea691672-9e35-455d-8157-6079719be3a2"
 }

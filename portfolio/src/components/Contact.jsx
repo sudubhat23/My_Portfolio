@@ -36,9 +36,12 @@ export default function Contact() {
   const [errorMsg, setErrorMsg] = useState('')
   const [copied, setCopied] = useState(false)
   
-  // Access key priority: localStorage -> config.js -> empty
+  // Access key: use config.js key directly if set, else check localStorage
   const [customKey, setCustomKey] = useState(() => {
-    return localStorage.getItem('web3forms_key') || (PORTFOLIO_CONFIG.web3formsKey !== 'YOUR_ACCESS_KEY_HERE' ? PORTFOLIO_CONFIG.web3formsKey : '')
+    if (PORTFOLIO_CONFIG.web3formsKey && PORTFOLIO_CONFIG.web3formsKey !== 'YOUR_ACCESS_KEY_HERE') {
+      return PORTFOLIO_CONFIG.web3formsKey
+    }
+    return localStorage.getItem('web3forms_key') || ''
   })
   const [showKeyInput, setShowKeyInput] = useState(false)
   const [keySavedToast, setKeySavedToast] = useState(false)
